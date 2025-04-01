@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enciclopédia Científica</title>
+</head>
+<body>
+    <h1>Explore e compartilhe experimentos científicos!</h1>
+
+    <nav>
+        <ul>
+            <li><a href="http://localhost:3001/adicionar-artigo">Adicionar Experimentos</a></li>
+            <li><a href="http://localhost:3001/buscar-artigo">Buscar Experimentos</a></li>
+            <li><a href="http://localhost:3001/categoria-artigo">Filtrar por Categoria</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <h2>Adicionar Experimento</h2>
+        <form action="http://localhost:3001/adicionar-artigo" method="post">
+            <label for="nomeArtigo">Nome do Experimento:</label>
+            <input type="text" id="nomeArtigo" name="nomeArtigo" required><br>
+            
+            <label for="categoria">Categoria:</label>
+            <input type="text" id="categoria" name="categoria" required><br>
+            
+            <label for="artigo">Descrição:</label>
+            <input type="text" id="artigo" name="artigo" required><br>
+            
+            <label for="urlFoto">URL da Imagem:</label>
+            <input type="text" id="urlFoto" name="urlFoto" required><br>
+            
+            <button type="submit">Adicionar</button>
+        </form>
+    </section>
+
+    <section>
+        <h2>Buscar Experimento</h2>
+        <form action="http://localhost:3001/buscar-artigo" method="post">
+            <label for="nomeArtigo">Nome do Experimento:</label>
+            <input type="text" id="nomeArtigo" name="nomeArtigo" required>
+            <button type="submit">Buscar</button>
+        </form>
+    </section>
+
+    <section>
+        <h2>Filtrar por Categoria</h2>
+        <form action="http://localhost:3001/categoria-artigo" method="post">
+            <label for="categoria">Categoria:</label>
+            <input type="text" id="categoria" name="categoria" required>
+            <button type="submit">Filtrar</button>
+        </form>
+    </section>
+</body>
+</html>
