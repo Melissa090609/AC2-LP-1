@@ -20,16 +20,16 @@
         <h2>Adicionar Experimento</h2>
         <form action="http://localhost:3001/adicionar-artigo" method="post">
             <label for="nomeArtigo">Nome do Experimento:</label>
-            <input type="text" id="nomeArtigo" name="nomeArtigo" required><br>
+            <input type="text" id="nomeExperimento" name="nomeExperimento" required><br>
             
             <label for="categoria">Categoria:</label>
             <input type="text" id="categoria" name="categoria" required><br>
             
             <label for="artigo">Descrição:</label>
-            <input type="text" id="artigo" name="artigo" required><br>
+            <input type="text" id="descrição" name="descrição" required><br>
             
             <label for="urlFoto">URL da Imagem:</label>
-            <input type="text" id="urlFoto" name="urlFoto" required><br>
+            <input type="text" id="urlImagem" name="urlImagem" required><br>
             
             <button type="submit">Adicionar</button>
         </form>
@@ -38,8 +38,8 @@
     <section>
         <h2>Buscar Experimento</h2>
         <form action="http://localhost:3001/buscar-artigo" method="post">
-            <label for="nomeArtigo">Nome do Experimento:</label>
-            <input type="text" id="nomeArtigo" name="nomeArtigo" required>
+            <label for="nomeExperimento">Nome do Experimento:</label>
+            <input type="text" id="nomeExperimento" name="nomeExperimento" required>
             <button type="submit">Buscar</button>
         </form>
     </section>
